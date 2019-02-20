@@ -1,0 +1,37 @@
+html,body{
+	height: 100%;
+}
+/*----任务列表样式---*/
+.getTask{
+	padding: 0;
+}
+.getTask .getTask-ul{
+	list-style: none;
+	padding: 0;
+}
+.getTask .getTask-ul li{
+	height: 53px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.getTask .getTask-ul li:hover{
+	background-color: #D4D4D4;
+}
+.getTask .getTask-ul li div{
+	display: inline-block;
+	
+	vertical-align: top;
+}
+.getTask .getTask-ul li .getTaskInfo{
+	width: 80%;
+	height: 100%;
+}
+.getTask .getTask-ul li .state{
+	margin-top: 7px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: red;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+		<title>任务详情</title>
+		<link rel="stylesheet" href= "css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/details.css" />
+	</head>
+	<body>
+		<div class="details-warp">
+			<ul class="details-ul">
+				<li>
+					<div class="left">快递类型:</div>
+					<div class="right" id="courierType"></div>
+				</li>
+				<li>
+					<div class="left">取货地址:</div>
+					<div class="right" id="getAddress"></div>
+				</li>
+				<li>
+					<div class="left">收货地址:</div>
+					<div class="right" id="toAddress"></div>
+				</li>
+				<li>
+					<div class="left">联系人姓名:</div>
+					<div class="right" id="userName"></div>
+				</li>
+				<li>
+					<div class="left">联系人电话:</div>
+					<div class="right" id="userPhone"></div>
+				</li>
+				<li>
+					<div class="left">收货时间:</div>
+					<div class="right" id="getTime"></div>
+				</li>
+				<li>
+					<div class="left">快递码:</div>
+					<div class="right" id="cargoYards"></div>
+				</li>
+				<li>
+					<div class="left">状态:</div>
+					<div class="right" id="status"></div>
+				</li>				
+				<li>
+					<div class="left">赏金:</div>
+					<div class="right" id="money"></div>
+				</li>				
+				<li style="height: auto;">
+					<div class="left">备注:</div>
+					<div class="right" id="note"></div>
+				</li>				
+			</ul>
+			<div class="release-the-task col-lg-12">	        	
+	         	<button id="submit_btn" class="btn" onclick="clickReceive()">
+					接取任务
+				</button>				
+			</div>	
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/details.js" ></script>
+	</body>
+</html>

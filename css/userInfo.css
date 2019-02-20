@@ -1,0 +1,65 @@
+html,body{
+	height: 100%;
+}
+body{
+	background-color: rgb(238,232,216);
+}
+/*-----头部用户头像及用户名----*/
+.header-warp{
+	height: 35%;
+	background-color: rgb(194,73,43);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.userImg{
+	height: 65px;
+	width: 65px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.userImg img{
+	height: 100%;
+	width: 100%;
+}
+.userName{
+	height: 30px;
+	width: 100%;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*-----功能列表-----*/
+.userList-wap{
+	padding: 0;
+	background-color: #fff;
+}
+.userList-ul{
+	list-style: none;
+	padding: 0;
+}
+.userList-ul li{
+	height: 40px;
+	padding: 0 15px;
+	border-bottom: 1px solid #AFD9EE;
+}
+.userList-ul li p{
+	position: relative;
+	font-size: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.userList-ul li p a{
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+.userList-ul li p a .user-leftI{
+	margin-right: 15px;
+}
+.userList-ul li:hover{
+	background-color: rgb(196,223,184);
+}

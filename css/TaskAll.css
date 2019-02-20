@@ -1,0 +1,34 @@
+html,body{
+	height: 100%;
+}
+.header-list{
+	padding: 0;
+	height: 40px;
+}
+.header-list ul{
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.header-list ul li{
+	background-color: rgb(225,225,225);
+	line-height: 40px;
+	font-weight: bold;
+	height: 100%;
+	text-align: center;
+}
+.li-active{
+	background-color: #fff!important;
+}
+
+/*----iframe样式----*/
+.iframe-box{
+	height:90%;
+	width: 100%;
+}
+.iframe-box iframe{
+	height: 100%;
+	width: 100%;
+	border: 0;
+}

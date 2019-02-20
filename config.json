@@ -1,0 +1,12 @@
+{
+	"Ajaxurl":{
+		"login":"http://47.107.44.25:8080/login/",
+		"setTask":"http://47.107.44.25:8080/task/add",
+		"getTaskList":"http://47.107.44.25:8080/task/get",
+		"getUserUnfo":"http://47.107.44.25:8080/user/",
+		"submitUserInfo":"http://47.107.44.25:8080/user/",
+		"ajax_getIssue":"http://47.107.44.25:8080/orders/publish",
+		"ajax_getAccept":"http://47.107.44.25:8080/orders/",
+		"showTaskDetails":"http://47.107.44.25:8080/task/info/"
+	}
+}

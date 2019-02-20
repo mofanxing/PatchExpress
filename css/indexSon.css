@@ -1,0 +1,107 @@
+html,body{
+	height: 100%;
+}
+
+/*-----头部轮播图----*/
+.content-header-warp{
+	height: 40%;
+}
+.content-header{
+	height: 100%;
+	padding: 0;
+}
+.content-header #carousel-example-generic,.carousel-inner,.item{
+	height: 100%;
+}
+.content-header #carousel-example-generic .carousel-inner .item img{
+	width: 100%;
+	height: 100%;
+}
+
+/*-----htmlName----*/
+.content-html-name{
+	padding: 0;
+	height: 20%;
+	background-color: yellowgreen;
+}
+.China-name{
+	margin-top: 0;
+	font-size: 50px;
+}
+.content-html-name img{
+	height: 100%;
+	width: 100%;
+}
+
+
+/*-----公告----*/
+.announcement{
+	padding: 0;
+	height: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(248,247,247);
+}
+.announcement .label1{
+	font-size: 15px;
+	width: 20%;
+	margin: 0;	
+}
+.announcement .label2{
+	font-size: 15px;
+	width: 23%;
+	margin: 0;
+	text-align: right;
+	font-weight: bold;
+}
+.marquee-font{
+	position: relative;
+	width: 57%;
+	height: 100%;
+	font-size: 17px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;	
+}
+.marquee-font p{
+	position: absolute;
+	font-size: 15px;
+	margin: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	left: 0;
+}
+
+
+/*------列表----*/
+.list{
+	padding: 0;
+	position: relative;
+	height: 35%;
+	overflow-x: scroll;
+}
+.list-ul{
+	position: absolute;
+	list-style: none;
+	height: 85%;
+	padding: 0 15px;
+	margin: 0;
+	bottom: 0;
+	display: flex;
+	
+}
+.list-ul li{
+	height: 100%;
+	width: 200px;
+	margin: 0 15px;
+}
+.list-ul li a{
+	text-decoration: none;	
+}
+.list-ul li a,img{
+	width: 100%;
+	height: 100%;
+}

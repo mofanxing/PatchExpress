@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+		<title>用户信息绑定</title>
+		<link rel="stylesheet" href= "css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/userInfoSubmit.css" />
+	</head>
+	<body>
+		<div class="setTask-warp">
+			<ul class="setTask-ul">				
+				<li>
+					<div class="font">
+						绑定学号:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入学号" id="studentId" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						绑定手机:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入手机号" id="phoneNum" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						性别:
+					</div>
+					<div class="input-right">
+						<input type="radio" id="boy" name="sex" class=""   value="1" />男
+						<input type="radio" id="girl" name="sex"   value="2" />女
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="annotation col-lg-12">
+				提示：为了保障您的合法权益，只有当校园卡和手机号全部通过认证后，您才能使用代取快递/同校拼车服务
+			</div>
+	        <div class="release-the-task col-lg-12">
+	        	
+	         	<button id="submit_btn">
+					确认提交
+				</button>
+				
+			</div>	
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/userInfoSubmit.js" ></script>
+	</body>
+</html>

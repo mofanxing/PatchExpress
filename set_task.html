@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+		<title>首页</title>
+		<link rel="stylesheet" href= "css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/setTask.css" />
+	</head>
+	<body>
+		<div class="setTask-warp">
+			<ul class="setTask-ul">
+				<li>
+					<div class="font">
+						快递品牌:
+					</div>
+					<div class="input-right">
+						<select id="Courier-type" class="pull-right ">
+							<option value="1">圆通</option>
+							<option value="2">顺丰</option>
+							<option value="3">苏宁易购</option>
+						</select>
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						取货地点:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入取货地点" id="getAddress" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						送达地址:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入送达地址" id="toAddress" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						取货时间:
+					</div>
+					<div class="input-right">
+						<input type="datetime-local" name="" class="public-input  pull-right" placeholder="请输入取货时间" id="getTime" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						收货人姓名:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入收货人姓名" id="userName" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						收货人电话:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入收货人电话" id="userPhone" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						取货码:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入取货码" id="cargoYards" value="" />
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						赏金:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input"  id="money" value="2" />
+						<span>元</span>
+					</div>
+				</li>
+				<li>
+					<div class="font">
+						备注:
+					</div>
+					<div class="input-right">
+						<input type="text" name="" class="public-input" placeholder="请输入备注信息" id="setNote" value="" />						
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="annotation col-lg-12">
+				*注：姓名、手机号、取件码不会公开，只有接单人可见，日期默认为今日，地址最多为20字，赏金不得低于1元，备注最多为30字
+			</div>
+	        <div class="release-the-task col-lg-12">
+	        	
+	         	<button id="submit_btn"   type="submit">
+					发布任务
+				</button>
+				
+			</div>	
+		
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/setTask.js" ></script>
+	</body>
+</html>
