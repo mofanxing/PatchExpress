@@ -11,6 +11,7 @@ html,body{
 }
 .getTask .getTask-ul li{
 	height: 53px;
+	padding: 0 10px;
 	border-bottom: 1px solid #CCCCCC;
 }
 .getTask .getTask-ul li:hover{

@@ -65,6 +65,7 @@ html,body{
 }
 .my_order_body ul li{
 	height: 53px;
+	padding: 0 10px;
 	border-bottom: 1px solid #CCCCCC;
 }
 .my_order_body ul li:hover{
