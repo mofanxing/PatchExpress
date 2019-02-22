@@ -23,9 +23,27 @@ html,body{
 }
 
 /*----iframe样式----*/
+.silBox{
+	position: relative;
+	height: 90%;
+	width: 100%;
+}
 .iframe-box{
 	height:90%;
 	width: 100%;
+	position: absolute;
+}
+#set{
+	left: 0%;
+	transition: all 0.5s;
+}
+#get{
+	left: 100%;
+	transition: all 0.5s;
+}
+#order{
+	left: 200%;
+	transition: all 0.5s;
 }
 .iframe-box iframe{
 	height: 100%;

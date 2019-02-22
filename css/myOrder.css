@@ -36,14 +36,14 @@ html,body{
 .accept,.issue{
 	width: 100%;
 	position: absolute;
+	transition: all 0.5s;
 	background-color: white;
 }
 .accept{
-	z-index: 3;
+	left: 0%;
 }
 .issue{
-	z-index: 2;
-	display: none;
+	left: 100%;
 }
 
 

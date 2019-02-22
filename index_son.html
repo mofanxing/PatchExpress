@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/indexSon.css"/>
 	</head>
 	<body>
+		<div class="silBox">
 		<div class="content-header-warp">
 			<div class="content-header col-lg-12">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -64,12 +65,17 @@
 		
 		<div class="list col-lg-12">
 			<ul class="list-ul">
-				<li><a href="task_all.html"><img src="img/list01.png" alt="快递代取" /></a></li>
-				<li><a href=""><img src="img/list01.png" alt="" /></a></li>
-				<li><a href=""><img src="img/list01.png" alt="" /></a></li>
+				<li onclick="silding2()"><img src="img/list01.png" alt="快递代取" /></li>
+				<li><img src="img/list01.png" alt="" /></li>
+				<li><img src="img/list01.png" alt="" /></li>
 			</ul>
-		</div>		
+		</div>	
+		</div>
+		<div class="body-content">
+			<iframe id="iframe-index" src="task_all.html"></iframe>
+		</div>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<script type="text/javascript" src="js/index_son.js" ></script>
 	</body>
 </html>

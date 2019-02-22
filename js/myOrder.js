@@ -20,13 +20,26 @@ $(document).ready(function(){
 	$(".my_order_header_ul").find("li").on("click",function(){
 		$(this).addClass("my_order_header_ul_li_active").siblings().removeClass("my_order_header_ul_li_active");
 		if($(this).index() == 1){
-		$(".accept").css("display","none");
-		$(".issue").css("display","block");
+			silding2();
 		}else{
-		$(".accept").css("display","block");
-		$(".issue").css("display","none");
+		silding1();
 		}
 	});
+	
+	//以下是滑动效果函数
+	function silding1(){
+				var left_num = parseInt($(".accept").css("left").substring(0,($(".accept").css("left").length-2)));
+				var left_num2 = parseInt($(".issue").css("left").substring(0,($(".issue").css("left").length-2)));										
+						$(".accept").css("left","0px");
+						$(".issue").css("left",""+$(window).width()+"px");	
+			}
+			
+			function silding2(){
+				var left_num = parseInt($(".accept").css("left").substring(0,($(".accept").css("left").length-2)));
+				var left_num2 = parseInt($(".issue").css("left").substring(0,($(".issue").css("left").length-2)));
+						$(".accept").css("left",""+-$(window).width()+"px");
+						$(".issue").css("left","0px");					
+			}			
 	
 	
 	
