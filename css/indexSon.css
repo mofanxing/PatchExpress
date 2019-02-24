@@ -80,8 +80,6 @@ body{
 	position: relative;
 	width: 57%;
 	height: 100%;
-	font-size: 17px;
-	font-weight: bold;
 	display: flex;
 	justify-content: center;
 	align-items: center;

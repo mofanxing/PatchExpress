@@ -11,8 +11,8 @@ html,body{
 }
 .getTask .getTask-ul li{
 	height: 53px;
-	padding: 0 10px;
-	border-bottom: 1px solid #CCCCCC;
+	padding: 0 20px;
+	border-bottom: 1px solid rgb(221,221,221);
 }
 .getTask .getTask-ul li:hover{
 	background-color: #D4D4D4;
@@ -28,11 +28,12 @@ html,body{
 }
 .getTask .getTask-ul li .state{
 	margin-top: 7px;
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	border-radius: 50%;
-	background-color: red;
+	background-color: darkred;
+	color: white;
 	text-align: center;
-	font-size: 18px;
-	line-height: 40px;
+	font-size: 12px;
+	line-height: 30px;
 }

@@ -6,7 +6,7 @@ body{
 }
 .my_order_header{
 	padding: 0;
-	height: 60px;
+	height: 40px;
 }
 .my_order_header_ul{
 	height: 100%;
@@ -19,15 +19,15 @@ body{
 }
 .my_order_header_ul li{
 	height: 100%;
-	width: 135px;
-	line-height: 60px;
+	width: 110px;
+	line-height: 40px;
 	text-align: center;
 	float: left;
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: bold;
 }
 .my_order_header_ul_li_active{
-	border-bottom: 2px solid rgb(194,73,43);
+	border-bottom: 1px solid rgb(194,73,43);
 	color: rgb(194,73,43);
 }
 .my_order_body{
@@ -68,7 +68,7 @@ body{
 }
 .my_order_body ul li{
 	height: 53px;
-	padding: 0 10px;
+	padding: 0 20px;
 	border-bottom: 1px solid #CCCCCC;
 }
 .my_order_body ul li:hover{
@@ -85,11 +85,12 @@ body{
 }
 .my_order_body ul li .state{
 	margin-top: 7px;
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	border-radius: 50%;
-	background-color: red;
+	background-color: darkred;
+	color: white;
 	text-align: center;
-	font-size: 18px;
-	line-height: 40px;
+	font-size: 12px;
+	line-height: 30px;
 }

@@ -12,29 +12,29 @@ html,body{
 	padding: 0;
 }
 .setTask-ul li{
-	height: 60px;
+	height: 40px;
 	width: 100%;
 	display: flex;
-	border-bottom: 1px solid cyan;
+	border-bottom: 1px solid rgb(221,221,221);
 }
 .setTask-ul li .font{
 	width: 35%;
 	height: 100%;
-	font-size: 17px;
-	line-height: 60px;
-	padding-left: 5px;
+	font-size: 15px;
+	line-height: 40px;
+	padding-left: 23px;
 }
 .setTask-ul li .input-right{
 	width: 65%;
 	height: 100%;
-	font-size: 17px;
+	font-size: 15px;
 
 }
 .setTask-ul li .input-right #Courier-type{
 	height: 100%;
 	width: 40%;
 	border: 0;
-	font-size: 17px;
+	font-size: 15px;
 	background-color: #fff;
 	border: 0!important;
 	outline: none!important;/*-----去除焦点效果---*/
@@ -45,7 +45,7 @@ html,body{
 	border: 0;
 	outline: none;
 	padding-right: 15px;
-	font-size: 17px;
+	font-size: 15px;
 	text-align: right;
 }
 
