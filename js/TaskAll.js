@@ -75,4 +75,4 @@ function touch(){
 		}
 	});
 }
-touch();
+//touch();
