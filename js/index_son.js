@@ -13,24 +13,22 @@ var flag = false;
 						$(".silBox").css("left",""+-$(window).width()+"px");
 						$(".body-content").css("left","0px");					
 			}			
-//			$(function(){				
-//				window.addEventListener("popstate", function(e) {
-//					
-//					if(flag){
-//						pushHistory();
-//					}else{
-//						
-//					}
-//					silding1();
-//					console.log(flag);
-//					flag = false;
-//					
-//				}, false);
-//				function pushHistory() {
-//				var state = {
-//				title: "title",
-//				url: "#"
-//				};
-//				window.history.pushState(state, "title", "#");
-//				}
-//				});
+			$(function(){	
+				pushHistory();
+				window.addEventListener("popstate", function(e) {
+					
+					if(flag){
+						pushHistory();
+					}
+					silding1();
+					flag = false;
+					
+				}, false);
+				function pushHistory() {
+				var state = {
+				title: "title",
+				url: "#"
+				};
+				window.history.pushState(state, "title", "#");
+				}
+				});

@@ -57,3 +57,22 @@ function silding3(){
 			$("#order").css("left","0px");
 	}
 }
+var movexBefor,movexAfter;//判断手指移动方向
+function touch(){
+	
+	document.querySelector("body").addEventListener("touchstart",function(e){		
+		e = e || window.event;
+		movexBefor = e.pageX;		
+	});
+	document.querySelector("body").addEventListener("touchend",function(e){		
+		e = e || window.event;
+		movexAfter = e.pageX;	
+		if(movexBefor - movexAfter > 50){
+			alert("向左滑");
+		}
+		if(movexBefor - movexAfter < 50){
+			alert("向右滑");
+		}
+	});
+}
+touch();
