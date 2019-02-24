@@ -53,7 +53,6 @@ $(document).ready(function(){
 					      withCredentials: true
 					  	},
 			success:function(data){
-				console.log(data);
 				var html_txt = "";
 				for(var i = 0; i < data.data.length; i++) {
 					var id = data.data[i].id;
@@ -86,8 +85,8 @@ $(document).ready(function(){
 			type:"get",
 			url:""+getAjaxUrl.Ajaxurl.ajax_getIssue+"",
 			data:{
-				"s":"1",
-				"e":"30"
+				"s":"0",
+				"e":"100"
 			},
 			xhrFields: {
 					      withCredentials: true

@@ -7,15 +7,16 @@ $("#setTask").on("click", function() {
 $("#getTask").on("click", function() {
 	$(this).addClass("li-active");
 	$("#setTask").removeClass("li-active");
-	$("#myTask").removeClass("li-active");
+	$("#myTask").removeClass("li-active");	
 	silding2();
-	
+	$("#get iframe").attr("src","get_task.html");
 });
 $("#myTask").on("click", function() {
 	$(this).addClass("li-active");
 	$("#getTask").removeClass("li-active");
 	$("#setTask").removeClass("li-active");
 	silding3();
+	$("#order iframe").attr("src","my_order.html");
 });
 
 

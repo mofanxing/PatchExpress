@@ -37,3 +37,13 @@ html,body{
 	font-size: 12px;
 	line-height: 30px;
 }
+
+/*点击加载*/
+#loding{
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	display: none;
+	background-color: rgb(221,221,221);
+}

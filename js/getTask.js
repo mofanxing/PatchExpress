@@ -15,19 +15,27 @@ var getAjaxUrl = (function() {
 
 
 function getTaskList(){
-				var listUl = $(".getTask-ul");				
+				var listUl = $(".getTask-ul #loding");
+				var listUlNum = 2+parseInt($(".getTask-ul").attr("value"));
 				$.ajax({
 					type:"get",
 					url:""+getAjaxUrl.Ajaxurl.getTaskList+"",
 					async:true,
 					data:{
-						"s":"1",
-						"e":"30"
+						"s":""+listUlNum+"",
+						"e":""+(listUlNum+2)+""
 					},
 					xhrFields: {
 							      withCredentials: true
 							  	},
 					success:function(data){
+						if(data.data.length == 0){
+							alert("已全部加载");							
+							return 0;
+						}
+						if(data.data.length > 1){
+							listUl.css("display","block")
+						}
 						var html_txt = "";
 						for(var i = 0;i < data.data.length;i++){
 							var id = data.data[i].id;
@@ -50,7 +58,10 @@ function getTaskList(){
 								 
 						}
 						
-						listUl.html(html_txt);
+						listUl.before(html_txt);
+						listUl.html("点击加载");
+						
+						
 					}
 				});
 			}
@@ -62,3 +73,14 @@ function getTaskList(){
 				localStorage.setItem("details",id);
 				window.open("details.html");
 			}
+			
+$("#loding").on("click",function(){
+	var listUlNum =parseInt($(".getTask-ul").attr("value"));
+	listUlNum+=2;
+	console.log(listUlNum);
+	console.log(listUlNum+2);
+	$(".getTask-ul").attr("value",""+listUlNum+"");
+	var listUl = $(".getTask-ul #loding");
+	listUl.html("加载中");
+	getTaskList();
+})

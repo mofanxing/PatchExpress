@@ -32,8 +32,9 @@ html,body{
 }
 .setTask-ul li .input-right #Courier-type{
 	height: 100%;
-	width: 40%;
+	width: 30%;
 	border: 0;
+	padding-right: 15px;
 	font-size: 15px;
 	background-color: #fff;
 	border: 0!important;
@@ -50,8 +51,8 @@ html,body{
 }
 
 #getTime{
-	padding: 0;
-	width: 70%;
+	padding-right: 15px;
+	width: 100%;
 	background-color: #fff;
 	border: 0!important;
 	outline: none!important;/*-----去除焦点效果---*/
