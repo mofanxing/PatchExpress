@@ -75,4 +75,8 @@ function touch(){
 		}
 	});
 }
+<<<<<<< HEAD
 touch();
+=======
+//touch();
+>>>>>>> 8d3e8fca0733bc2ddd351f8a8d0edca1c0ee87eb
