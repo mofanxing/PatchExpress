@@ -85,7 +85,7 @@ body{
 	align-items: center;
 	overflow: hidden;	
 }
-.marquee-font p{
+.marquee-font marquee{
 	position: absolute;
 	font-size: 15px;
 	margin: 0;
