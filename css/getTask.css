@@ -1,6 +1,9 @@
 html,body{
 	height: 100%;
 }
+body{
+	overflow-y: hidden;
+}
 /*----任务列表样式---*/
 .getTask{
 	padding: 0;

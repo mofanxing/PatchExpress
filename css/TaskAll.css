@@ -26,13 +26,19 @@ body{
 }
 
 /*----iframe样式----*/
-.silBox{
-	position: relative;
-	height: 90%;
+.swiper-container,.swiper-wrapper,.swiper-slide{
+	height: 100%;
 	width: 100%;
 }
+.swiper-wrapper{
+	position: relative;
+	transition: all 0.5s!important;
+}
+.swiper-slide{
+	position: absolute!important;
+}
 .iframe-box{
-	height:90%;
+	height:100%;
 	width: 100%;
 	position: absolute;
 }
@@ -53,3 +59,4 @@ body{
 	width: 100%;
 	border: 0;
 }
+

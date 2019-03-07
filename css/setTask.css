@@ -1,7 +1,9 @@
 html,body{
 	height: 100%;
 }
-
+body{
+	overflow-y: hidden;
+}
 /*-------用户输入信息样式----*/
 .setTask-warp{
 	width: 100%;
@@ -32,7 +34,7 @@ html,body{
 }
 .setTask-ul li .input-right #Courier-type{
 	height: 100%;
-	width: 30%;
+	width: 40%;
 	border: 0;
 	padding-right: 15px;
 	font-size: 15px;

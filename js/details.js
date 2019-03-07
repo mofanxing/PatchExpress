@@ -41,6 +41,8 @@ var golbolId;
 						if(data.data.status == "已接"){
 							btn.addClass("disabled")
 						}
+						
+						
 						courierType.html(data.data.express_type);
 						getAddress.html(data.data.get_address);
 						toAddress.html(data.data.to_address);
@@ -62,7 +64,7 @@ var golbolId;
 						if(confirm("你确认领取该任务吗!")){
 							$.ajax({
 							type:"get",
-							url:""+getAjaxUrl.Ajaxurl.ajax_getIssue+""+golbolId+"",
+							url:""+getAjaxUrl.Ajaxurl.ajax_patch+""+golbolId+"",
 							xhrFields: {
 							      withCredentials: true
 							  	},

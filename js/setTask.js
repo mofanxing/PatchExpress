@@ -46,7 +46,7 @@ function setTask(){
 					success:function(data){
 						alert(data.message);
 						if(data.code == 1){
-							location.href="set_task.html";
+							location.href="task_all.html";
 						}
 					}
 					

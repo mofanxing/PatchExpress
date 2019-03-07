@@ -6,28 +6,190 @@
 		<title>寻人拿快递</title>
 		<link rel="stylesheet" href= "css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="css/TaskAll.css" />
+		<link rel="stylesheet" type="text/css" href="css/getTask.css"/>
+		<link rel="stylesheet" type="text/css" href="css/setTask.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myOrder.css"/>
+		
 	</head>
 	<body>
 		<div class="header-list col-lg-12">
 			<ul>
-				<li id="setTask" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 li-active">寻人拿快递</li>
-				<li id="getTask" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">我要拿快递</li>
-				<li id="myTask" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">我的订单</li>
+				<li id="setTask" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 li-active" value="1">寻人拿快递</li>
+				<li id="getTask" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" value="2">我要拿快递</li>
+				<li id="myTask" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" value="3">我的订单</li>
 			</ul>
 		</div>
-		
-		<div class="iframe-box swiper-slide"id="set">
-			<iframe src="set_task.html"></iframe>
+		<div class="swiper-container" id="swiper1">
+			<div class="swiper-wrapper" id="op">
+				<!--发布任务-->
+				<div class="swiper-slide" id="set" value="1">
+					<div class="setTask-warp">
+						<ul class="setTask-ul">
+							<li>
+								<div class="font">
+									快递品牌:
+								</div>
+								<div class="input-right">
+									<select id="Courier-type" class="pull-right ">
+										<option value="1">圆通</option>
+										<option value="2">顺丰</option>
+										<option value="3">苏宁易购</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									取货地点:
+								</div>
+								<div class="input-right">
+									<input type="text" name="" class="public-input" placeholder="请输入取货地点" id="getAddress" value="" />
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									送达地址:
+								</div>
+								<div class="input-right">
+									<input type="text" name="" class="public-input" placeholder="请输入送达地址" id="toAddress" value="" />
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									取货时间:
+								</div>
+								<div class="input-right">
+									<input type="datetime-local" name="" class="public-input  pull-right" placeholder="请输入取货时间" id="getTime" value="" />
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									收货人姓名:
+								</div>
+								<div class="input-right">
+									<input type="text" name="" class="public-input" placeholder="请输入收货人姓名" id="userName" value="" />
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									收货人电话:
+								</div>
+								<div class="input-right">
+									<input type="text" name="" class="public-input" placeholder="请输入收货人电话" id="userPhone" value="" />
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									取货码:
+								</div>
+								<div class="input-right">
+									<input type="text" name="" class="public-input" placeholder="请输入取货码" id="cargoYards" value="" />
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									赏金:
+								</div>
+								<div class="input-right">
+									<input type="text" name="" class="public-input"  id="money" value="2" />
+									<span>元</span>
+								</div>
+							</li>
+							<li>
+								<div class="font">
+									备注:
+								</div>
+								<div class="input-right">
+									<input type="text" name="" class="public-input" placeholder="请输入备注信息" id="setNote" value="" />						
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="annotation col-lg-12">
+							*注：姓名、手机号、取件码不会公开，只有接单人可见，日期默认为今日，地址最多为20字，赏金不得低于1元，备注最多为30字
+						</div>
+				        <div class="release-the-task col-lg-12">
+				        	
+				         	<button id="submit_btn"   type="submit">
+								发布任务
+							</button>
+							
+						</div>	
+				</div>
+				
+				<!--获取任务列表-->
+				<div class="swiper-slide" id="get" value="2">
+					<div class="getTask col-lg-12">
+						<ul class="getTask-ul" value="-30">
+							<!--<li>
+								<div class="getTaskInfo">
+									<p>四川大学江安校区 圆通</p>
+									<p>2018-11-27 10:00:28 发布</p>
+								</div>
+								<div class="state">
+									已接
+								</div>
+							</li>-->
+							<li id="loding" value="30">点击加载</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!--我的订单-->
+				<div class="swiper-slide" id="order" value="3">
+					<div class="my_order_header col-lg-12">
+						<ul class="my_order_header_ul">
+							<li class="my_order_header_ul_li_active">我接受的</li>
+							<li>我发放的</li>				
+						</ul>
+					</div>
+					<div class="my_order_body col-lg-12">
+						<div class="swiper-container" id="swiper2">
+							<div class="swiper-wrapper">
+								<div class="accept swiper-slide">
+									<ul></ul>
+								</div>
+								<div class="issue swiper-slide">
+									<ul></ul>
+								</div>						
+								<div class="prompt_text">
+									空空如也 <i class="glyphicon glyphicon-leaf"></i>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+				
+				
+				
+				
+				
+				
+				<!--<div class="iframe-box swiper-slide"id="set">
+					<iframe src="set_task.html"></iframe>
+				</div>
+				<div class="iframe-box swiper-slide" id="get">
+					<iframe src="get_task.html"></iframe>
+				</div>
+				<div class="iframe-box swiper-slide" id="order">
+					<iframe src="my_order.html"></iframe>
+				</div>-->
 		</div>
-		<div class="iframe-box swiper-slide" id="get">
-			<iframe src="get_task.html"></iframe>
-		</div>
-		<div class="iframe-box swiper-slide" id="order">
-			<iframe src="my_order.html"></iframe>
-		</div>
-		
-		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		</div>	
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>		
 		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<script type="text/javascript" src="js/TaskAll.js" ></script>
+		<script type="text/javascript" src="js/myOrder.js" ></script>
+		<script type="text/javascript" src="js/setTask.js" ></script>
+		<script type="text/javascript" src="js/getTask.js" ></script>
+		
+		<script type="text/javascript" src="swiper-4.4.6/dist/js/swiper.min.js" ></script>
+		<script>
+			//初始化滑动效果
+			var mySwiper = new Swiper('#swiper1', {
+				autoplay: false,//可选选项，自动滑动,			
+			});
+			
+			</script>
 	</body>
 </html>

@@ -83,10 +83,10 @@ $(document).ready(function(){
 	function ajax_getAccept(){
 		$.ajax({
 			type:"get",
-			url:""+getAjaxUrl.Ajaxurl.ajax_getIssue+"",
+			url:""+getAjaxUrl.Ajaxurl.ajax_getAccept+"",
 			data:{
 				"s":"0",
-				"e":"100"
+				"e":"10000"
 			},
 			xhrFields: {
 					      withCredentials: true
