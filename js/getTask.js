@@ -29,6 +29,7 @@ function getTaskList(){
 							      withCredentials: true
 							  	},
 					success:function(data){
+						console.log(data);
 						if(data.data.length == 0){
 							alert("已全部加载");
 							listUl.html("已全加载");
@@ -44,12 +45,16 @@ function getTaskList(){
 							var express_type = data.data[i].express_type;
 							var create_time = data.data[i].create_time;
 							var status = data.data[i].status;
+							var price = data.data[i].price;
 							if(status == '未接'){
 								var string_txt = '<li value='+id+' onclick="saveId(this)">'+
 											 '<div class="getTaskInfo">'+
 											 '<p>'+address+' '+express_type+'</p>'+ 
 											 '<p>'+create_time+' 发布</p>'+
 											 '</div>'+ 
+											 '<div class="price">'+
+											 ''+price+' 元'+
+											 '</div>'+
 											 '<div class="state">'+
 												''+status+''+
 					 						 '</div>'+

@@ -74,7 +74,7 @@ function mover(){
 			$("#getTask").removeClass("li-active");
 			$("#setTask").removeClass("li-active");
 		}
-		},500);
+		},300);
 		
 	});
 }

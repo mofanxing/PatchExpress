@@ -11,7 +11,7 @@ body{
 .setTask-ul{
 	list-style: none;
 	width: 100%;
-	padding: 0;
+	padding:0;
 }
 .setTask-ul li{
 	height: 40px;

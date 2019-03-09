@@ -60,7 +60,18 @@ $(document).ready(function(){
 					var express_type = data.data[i].express_type;
 					var create_time = data.data[i].create_time;
 					var status = data.data[i].status;
-					var string_txt = '<li value='+id+'>'+
+					if(status == "已接"){
+						var string_txt = '<li value='+id+'>'+
+											 '<div class="getTaskInfo">'+
+											 '<p>'+address+' '+express_type+'</p>'+ 
+											 '<p>'+create_time+' 发布</p>'+
+											 '</div>'+ 
+											 '<div class="state bg-public">'+
+												''+status+''+
+					 						 '</div>'+
+											 '</li>';
+					}else{
+						var string_txt = '<li value='+id+'>'+
 											 '<div class="getTaskInfo">'+
 											 '<p>'+address+' '+express_type+'</p>'+ 
 											 '<p>'+create_time+' 发布</p>'+
@@ -69,6 +80,8 @@ $(document).ready(function(){
 												''+status+''+
 					 						 '</div>'+
 											 '</li>';
+					}
+					
 					html_txt += string_txt;	 
 				}
 				$(".issue").find("ul").html(html_txt);
@@ -102,7 +115,18 @@ $(document).ready(function(){
 					var express_type = data.data[i].express_type;
 					var create_time = data.data[i].create_time;
 					var status = data.data[i].status;
-					var string_txt = '<li value='+id+'>'+
+					if(status == "已接"){
+						var string_txt = '<li value='+id+'>'+
+											 '<div class="getTaskInfo">'+
+											 '<p>'+address+' '+express_type+'</p>'+ 
+											 '<p>'+create_time+' 发布</p>'+
+											 '</div>'+ 
+											 '<div class="state bg-public">'+
+												''+status+''+
+					 						 '</div>'+
+											 '</li>';
+					}else{
+						var string_txt = '<li value='+id+'>'+
 											 '<div class="getTaskInfo">'+
 											 '<p>'+address+' '+express_type+'</p>'+ 
 											 '<p>'+create_time+' 发布</p>'+
@@ -111,6 +135,7 @@ $(document).ready(function(){
 												''+status+''+
 					 						 '</div>'+
 											 '</li>';
+					}
 					html_txt += string_txt;	 
 				}
 				$(".accept").find("ul").html(html_txt);

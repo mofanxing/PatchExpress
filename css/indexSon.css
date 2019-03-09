@@ -25,7 +25,7 @@ body{
 }
 /*-----头部轮播图----*/
 .content-header-warp{
-	height: 40%;
+	height: 30%;
 }
 .content-header{
 	height: 100%;
@@ -99,17 +99,17 @@ body{
 .list{
 	padding: 0;
 	position: relative;
-	height: 35%;
+	height: 45%;
 	background-color: #fff;
 	overflow-x: scroll;
 }
 .list-ul{
 	position: absolute;
 	list-style: none;
-	height: 85%;
+	height: 70%;
 	padding: 0 15px;
 	margin: 0;
-	bottom: 0;
+	bottom: 60px;
 	display: flex;
 	
 }

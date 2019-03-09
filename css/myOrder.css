@@ -94,3 +94,8 @@ body{
 	font-size: 12px;
 	line-height: 30px;
 }
+
+/*----已接背景色---*/
+.bg-public{
+	background-color: #8C8C8C!important;
+}
