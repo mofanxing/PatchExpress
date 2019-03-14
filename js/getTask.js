@@ -39,6 +39,7 @@ function getTaskList(){
 							listUl.css("display","block")
 						}
 						var html_txt = "";
+						var string_txt2 = "";
 						for(var i = 0;i < data.data.length;i++){
 							var id = data.data[i].id;
 							var address = data.data[i].to_address;
@@ -60,10 +61,24 @@ function getTaskList(){
 					 						 '</div>'+
 											 '</li>';
 								html_txt += string_txt;			
+							}if(status == '已接'){
+								var string_txt3 = '<li value='+id+' onclick="saveId(this)">'+
+											 '<div class="getTaskInfo">'+
+											 '<p>'+address+' '+express_type+'</p>'+ 
+											 '<p>'+create_time+' 发布</p>'+
+											 '</div>'+ 
+											 '<div class="price">'+
+											 ''+price+' 元'+
+											 '</div>'+
+											 '<div class="state bg-public">'+
+												''+status+''+
+					 						 '</div>'+
+											 '</li>';
+								string_txt2 += string_txt3;			
 							}
 								 
 						}
-						
+						html_txt = html_txt+string_txt2;
 						listUl.before(html_txt);
 						listUl.html("点击加载");
 						
